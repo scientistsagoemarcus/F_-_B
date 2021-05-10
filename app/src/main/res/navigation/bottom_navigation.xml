@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.fb.bottom_nav.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_categories"
+        android:name="com.example.fb.bottom_nav.categories.CategoriesFragment"
+        android:label="@string/title_categories"
+        tools:layout="@layout/fragment_categories" />
+
+    <fragment
+        android:id="@+id/navigation_orders"
+        android:name="com.example.fb.bottom_nav.orders.OrdersFragment"
+        android:label="@string/title_orders"
+        tools:layout="@layout/fragment_orders" />
+
+    <fragment android:id="@+id/navigation_payments"
+        android:name="com.example.fb.bottom_nav.payments.PaymentsFragment"
+        android:label="Notification"
+        tools:layout="@layout/fragment_payments"/>
+<fragment
+    android:id="@+id/navigation_help"
+    android:label="@string/Help"
+    tools:layout="@layout/fragment_help"/>
+</navigation>
